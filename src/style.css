@@ -1,41 +1,15 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  
---color-primary-50: #fbfaef;
---color-primary-100: #f4f0d1;
---color-primary-200: #e8de9f;
---color-primary-300: #e1d283;
---color-primary-400: #d3b74c;
---color-primary-500: #ca9e36;
---color-primary-600: #b27e2d;
---color-primary-700: #945f29;
---color-primary-800: #7a4c26;
---color-primary-900: #653f22;
---color-primary-950: #39210f;
+@layer base {
+  /* Custom global styles can be added here */
+}
 
---color-secondary-50: #f4f6fb;
---color-secondary-100: #e8ecf6;
---color-secondary-200: #ccd6eb;
---color-secondary-300: #9fb5da;
---color-secondary-400: #6c8ec4;
---color-secondary-500: #496fae;
---color-secondary-600: #35538b;
---color-secondary-700: #2e4776;
---color-secondary-800: #293d63;
---color-secondary-900: #273553;
---color-secondary-950: #1a2237;
-
---color-gray-50: #f8fafc;
---color-gray-100: #f1f5f9;
---color-gray-200: #e2e8f0;
---color-gray-300: #cbd5e1;
---color-gray-400: #94a3b8;
---color-gray-500: #64748b;
---color-gray-600: #475569;
---color-gray-700: #334155;
---color-gray-800: #1e293b;
---color-gray-900: #0f172a;
---color-gray-950: #020617;
+@layer components {
+  /* Debug class to show token values */
+  .debug-tokens::after {
+    content: "Jamie tokens loaded: Check browser dev tools for custom color values";
+    @apply text-xs text-gray-500 block mt-2;
+  }
 }
