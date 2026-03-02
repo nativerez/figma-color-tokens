@@ -1,40 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite + Tailwind</title>
-</head>
-<body>
-    <div class="container max-w-screen-lg p-4 mx-auto">
-        <div class="p-6 bg-gray-100">
-            <h1 class="text-2xl font-bold text-gray-800">Hello Tailwind with Vite!</h1>
-            <p class="mt-2 text-gray-600">This is a simple example of using Tailwind CSS with Vite.</p>
-        </div>
-        
-        <!-- Test section for jamie-tokens -->
-        <div class="p-6 mt-8 debug-tokens">
-            <h2 class="mb-4 text-xl font-bold text-gray-800">Testing jamie-tokens</h2>
-            
-            <!-- Test custom colors -->
-            <div class="grid grid-cols-3 gap-4 mb-6">
-                <div class="p-4 text-white bg-blue-500 rounded">Blue 500</div>
-                <div class="p-4 text-white bg-green-500 rounded">Green 500</div>
-                <div class="p-4 text-white bg-purple-500 rounded">Purple 500</div>
-                <div class="p-4 text-white bg-red-500 rounded">Red 500</div>
-            </div>
-            
-            <!-- Test if tokens are working vs default colors -->
-            <div class="mb-4">
-                <p class="font-medium text-blue-500">If this blue matches your jamie-tokens blue-500, tokens are working!</p>
-                <p class="font-medium text-green-500">If this green matches your jamie-tokens green-500, tokens are working!</p>
-                <p class="font-medium text-purple-500">If this purple matches your jamie-tokens purple-500, tokens are working!</p>
-                <p class="font-medium text-red-500">If this red matches your jamie-tokens red-500, tokens are working!</p>
-            </div>
-        </div>
-    </div>
-    
-    <script type="module" src="/src/main.js"></script>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Set the document title to the name of your application -->
+    <title>Lovable App</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <!-- TODO: Update og:title to match your application name -->
+    <meta property="og:title" content="Lovable App" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

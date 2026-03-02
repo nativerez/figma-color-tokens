@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Color System using primary ramp from jamie-tokens
+  All colors read directly from tokens.json via Tailwind config
+  No CSS variables needed - colors are baked into Tailwind classes
+*/
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
